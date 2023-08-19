@@ -1,0 +1,15 @@
+Function OurSum(x as Integer, y as Integer) As Integer
+OurSum= x + y
+End Function
+
+--------------------------
+Create a function to test logical values
+
+Function TestResult(TestScore as Integer) As String
+  If TestScore>=60 Then
+    TestScore="Good"
+  Else
+  If TestScore<60 Then
+    TestScore="Bad"
+  EndIf
+End function
