@@ -1,0 +1,16 @@
+Sub Getcellvalue ()
+  Worksheets("Feuil2").Range("C1").Select
+  Cells(1, 3).Select
+End Sub
+---------------------------
+Sub Getcellvalue()
+  Dim CellValue As String
+  CellValue=Worksheets("Feuil1").Range("A1").Value
+  MsgBox CellValue
+End Sub
+
+----------------------------
+Sub getcallvalue ()
+  Worksheets("Feuil2").Range("C1").Value="Coimbatore-Abidjan"
+  Worksheets("Feuil2").Range("C5").Value=Worksheets("Feuil2").Range("C1").Value
+end sub
