@@ -1,0 +1,41 @@
+#The active cell in VBA can be used as a reference to move to another cell or change the properties of the same active cell or the cell reference provided by the active cell
+Sub ActiveCell_Example ()
+  Range("A1").Select
+  ActiveCell.Value="Bye"
+
+End Sub
+
+------------------------------
+Sub ActiveCell_example2 ()
+
+  MsgBox ActiveCell.Address
+
+End Sub
+
+------------------------------------
+Sub ActiveCell_example2 ()
+
+MsgBox ActiveCell.Value
+
+End Sub
+
+------------------------------------
+Sub ActiveCell_example2 ()
+
+MsgBox ActiveCell.Row
+
+End Sub
+
+-------------------
+Sub ActiveCell_example2 ()
+
+MsgBox ActiveCell.Column
+
+End Sub
+
+----------------------
+Sub ActiveCell_Example3 ()
+
+ ActiveCell.Value="Hiiii"
+
+End Sub
