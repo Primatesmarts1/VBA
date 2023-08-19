@@ -1,0 +1,14 @@
+Sub Copy_Function ()
+  Range ("A1").copy Destination:=Range("B3")
+End Sub
+---------------------------------------
+Sub Copyfunction_todiffWorkbook ()
+ Range("A1"). Copy Destination:=Worksheets("Sheet2").Range("A1")
+End Sub
+--------------------------------------
+Sub Copyfunction_todiffWorksheet ()
+  Workbooks("Test VBA.xlsx").Worksheets("Feuil1").Range("A1").Copy
+  Workbooks("Test VBA 2.xlsx").Activate
+  Workbooks("Test VBA 2.xlsx").Worksheets("Feuil2").Select
+  ActiveSheet.Paste
+End Sub
